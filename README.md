@@ -1,6 +1,7 @@
 # dsh-client-ui-cyberpunk
 
 [![license](https://img.shields.io/badge/license-MIT-22e8ff)](./LICENSE)
+[![release](https://img.shields.io/github/v/release/kemone/dsh-client-ui-cyberpunk)](https://github.com/kemone/dsh-client-ui-cyberpunk/releases)
 [![dsh](https://img.shields.io/badge/dsh-client--ui-web-6d3bd1)](https://github.com/deepseek-ai)
 
 **A cyberpunk neon skin for the DeepSeek Harness web GUI.** Dark navy surfaces, cyan hairlines, a deep-red text
