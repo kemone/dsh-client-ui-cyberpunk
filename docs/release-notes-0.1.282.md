@@ -25,11 +25,14 @@ Requires DSH `0.2.x` (desktop or web profile). The asset below is the exact `npm
 dsh plugin --profile desktop add dsh-client-ui-cyberpunk-0.1.282.tgz
 ```
 
-From a checkout, without a build step:
+From a checkout, build the same artifact yourself:
 
 ```powershell
-dsh plugin --profile desktop add F:\path\to\dsh-client-ui-cyberpunk\dist\dsh-client-ui-cyberpunk-0.1.282.tgz
+npm pack
+dsh plugin --profile desktop add .\dsh-client-ui-cyberpunk-0.1.282.tgz
 ```
+
+The repository is source-only: the tarball is a release asset, not a committed file.
 
 Uninstall:
 

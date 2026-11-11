@@ -42,15 +42,22 @@ Requires DSH `0.2.x` (desktop or web profile).
 # from npm, once published
 dsh plugin --profile desktop add dsh-client-ui-cyberpunk
 
-# from the prebuilt tarball committed in this repository (dist/)
-dsh plugin --profile desktop add F:\path\to\dsh-client-ui-cyberpunk\dist\dsh-client-ui-cyberpunk-0.1.282.tgz
-
-# from a release tarball (GitHub release asset)
+# from the GitHub release asset (no build step)
+#   1. download dsh-client-ui-cyberpunk-0.1.282.tgz
+#      https://github.com/kemone/dsh-client-ui-cyberpunk/releases/latest
+#   2. install the downloaded file
 dsh plugin --profile desktop add F:\path\to\dsh-client-ui-cyberpunk-0.1.282.tgz
+
+# or from a checkout: build the same tarball yourself, then install it
+npm pack
+dsh plugin --profile desktop add .\dsh-client-ui-cyberpunk-0.1.282.tgz
 
 # or link a checkout while editing the skin
 dsh plugin --profile desktop add link:F:\path\to\dsh-client-ui-cyberpunk
 ```
+
+Every release carries the packaged tarball as an asset, so the repository itself stays source-only;
+the tarball is not committed to git.
 
 Installing registers the package in the profile's `dsh.profile.bundles`, so it also shows up in
 **Settings → Plugins**.
@@ -148,15 +155,21 @@ DeepSeek Harness Web GUI 的赛博朋克配色皮肤。以覆盖官方设计 tok
 # 已发布到 npm 后
 dsh plugin --profile desktop add dsh-client-ui-cyberpunk
 
-# 直接装本仓库里预构建好的包（dist/）
-dsh plugin --profile desktop add F:\path\to\dsh-client-ui-cyberpunk\dist\dsh-client-ui-cyberpunk-0.1.282.tgz
-
-# 从 release tarball 安装（GitHub Release 附件）
+# 从 GitHub Release 附件安装（无需自己打包）
+#   1. 下载 dsh-client-ui-cyberpunk-0.1.282.tgz
+#      https://github.com/kemone/dsh-client-ui-cyberpunk/releases/latest
+#   2. 安装下载到的文件
 dsh plugin --profile desktop add F:\path\to\dsh-client-ui-cyberpunk-0.1.282.tgz
+
+# 或在仓库里自己打同一个包再装
+npm pack
+dsh plugin --profile desktop add .\dsh-client-ui-cyberpunk-0.1.282.tgz
 
 # 或直接链接本地目录（改样式时免打包）
 dsh plugin --profile desktop add link:F:\path\to\dsh-client-ui-cyberpunk
 ```
+
+每个 Release 都附带打包好的 tgz，仓库只放源码，不再把 tgz 提交进 git。
 
 安装会把它登记进 profile 的 `dsh.profile.bundles`，所以会出现在「设置 → 插件」里。
 
