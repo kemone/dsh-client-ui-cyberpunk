@@ -14,6 +14,8 @@ single-rule iterations (one colour, one inset, one selector) and are not listed 
   plus `scripts/verify-manifest.mjs` (manifest + package-shape checks), a CI workflow and the docs below.
 - Screenshots for both themes (`docs/screenshots/`, dark and light, conversation and new session) with a gallery
   in the README.
+- Prebuilt install tarball in `dist/` (`npm pack` of this commit, 386 kB with screenshots), so the repository can
+  be installed without a build step. It is the same artifact `npm publish` would upload.
 - Two comments still claimed the workspace-row edge was keyed with `:has()`; it is keyed with `data-dsh-folder`
   since 0.1.279. Comments only, no selector changed.
 

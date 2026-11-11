@@ -41,7 +41,10 @@ Requires DSH `0.2.x` (desktop or web profile).
 # from npm, once published
 dsh plugin --profile desktop add dsh-client-ui-cyberpunk
 
-# from a release tarball (npm pack output / GitHub release asset)
+# from the prebuilt tarball committed in this repository (dist/)
+dsh plugin --profile desktop add F:\path\to\dsh-client-ui-cyberpunk\dist\dsh-client-ui-cyberpunk-0.1.282.tgz
+
+# from a release tarball (GitHub release asset)
 dsh plugin --profile desktop add F:\path\to\dsh-client-ui-cyberpunk-0.1.282.tgz
 
 # or link a checkout while editing the skin
@@ -144,7 +147,10 @@ DeepSeek Harness Web GUI 的赛博朋克配色皮肤。以覆盖官方设计 tok
 # 已发布到 npm 后
 dsh plugin --profile desktop add dsh-client-ui-cyberpunk
 
-# 从 release tarball 安装（npm pack 产物 / GitHub Release 附件）
+# 直接装本仓库里预构建好的包（dist/）
+dsh plugin --profile desktop add F:\path\to\dsh-client-ui-cyberpunk\dist\dsh-client-ui-cyberpunk-0.1.282.tgz
+
+# 从 release tarball 安装（GitHub Release 附件）
 dsh plugin --profile desktop add F:\path\to\dsh-client-ui-cyberpunk-0.1.282.tgz
 
 # 或直接链接本地目录（改样式时免打包）
