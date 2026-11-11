@@ -12,6 +12,8 @@ single-rule iterations (one colour, one inset, one selector) and are not listed 
 
 - Repository packaging: added `repository` / `bugs` / `homepage` / `author` / `publishConfig` to `package.json`,
   plus `scripts/verify-manifest.mjs` (manifest + package-shape checks), a CI workflow and the docs below.
+- Screenshots for both themes (`docs/screenshots/`, dark and light, conversation and new session) with a gallery
+  in the README.
 - Two comments still claimed the workspace-row edge was keyed with `:has()`; it is keyed with `data-dsh-folder`
   since 0.1.279. Comments only, no selector changed.
 

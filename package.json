@@ -12,15 +12,15 @@
     "cyberpunk",
     "dark-theme"
   ],
-  "homepage": "https://github.com/ziyuo/dsh-client-ui-cyberpunk#readme",
+  "homepage": "https://github.com/kemone/dsh-client-ui-cyberpunk#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ziyuo/dsh-client-ui-cyberpunk.git"
+    "url": "git+https://github.com/kemone/dsh-client-ui-cyberpunk.git"
   },
   "bugs": {
-    "url": "https://github.com/ziyuo/dsh-client-ui-cyberpunk/issues"
+    "url": "https://github.com/kemone/dsh-client-ui-cyberpunk/issues"
   },
-  "author": "ziyuo",
+  "author": "kemone",
   "license": "MIT",
   "type": "module",
   "main": "lib/index.js",
@@ -34,7 +34,8 @@
     "lib",
     "cordis.patch.yml",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "docs/screenshots"
   ],
   "scripts": {
     "check": "node --check lib/client.js && node --check lib/index.js",

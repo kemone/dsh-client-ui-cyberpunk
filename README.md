@@ -24,6 +24,15 @@ imports no React module of its own, and keeps the host half an empty `apply()`.
 Both themes keep the same geometry: the three column frame, the sidebar glass blocks and the composer card sit in
 exactly the same place, so switching `light` / `dark` / `system` only swaps colours.
 
+## Screenshots
+
+| | Dark | Light |
+|---|---|---|
+| Conversation | ![Dark theme with a conversation open](docs/screenshots/dark-conversation.webp) | ![Light theme with a conversation open](docs/screenshots/light-conversation.webp) |
+| New session | ![Dark theme, new session](docs/screenshots/dark-empty.webp) | ![Light theme, new session](docs/screenshots/light-empty.webp) |
+
+Taken on Windows 11 against DSH desktop `0.2.1-rc.5`.
+
 ## Install
 
 Requires DSH `0.2.x` (desktop or web profile).
@@ -124,6 +133,8 @@ DeepSeek Harness Web GUI 的赛博朋克配色皮肤。以覆盖官方设计 tok
 
 两套主题共用同一份结构规则，只替换 token，所以三栏边框、侧栏玻璃块、输入卡在两种模式下位置完全一致。
 切换在 **设置 → 通用 → 外观**（或 `preference: light | dark | system`）。
+
+截图见 [docs/screenshots](docs/screenshots)：深色 / 浅色 各两张（会话页、新建会话页）。
 
 ## 安装
 
