@@ -1,0 +1,7 @@
+# 赛博朋克皮肤（bundle patch）：把自己的一行插进 profile 组合树。
+#
+# 注册方式与官方 bundle 相同，由 profile package.json 的 dsh.profile.bundles 选入；
+# 在「设置 → 插件」里启用/停用这个组合包即可控制皮肤是否加载。
+- insert:
+    - id: ui-cyberpunk
+      name: dsh-client-ui-cyberpunk

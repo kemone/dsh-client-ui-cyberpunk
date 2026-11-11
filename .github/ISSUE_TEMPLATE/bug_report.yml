@@ -1,0 +1,50 @@
+name: Bug report
+description: A rule is not applying, the wrong theme is showing, or something looks broken.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. The first three fields decide whether this is reproducible at all.
+  - type: input
+    id: dsh-version
+    attributes:
+      label: DSH version
+      description: "Help → About, or the version in the app.asar filename."
+      placeholder: "0.2.1-rc.5"
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: OS
+      placeholder: "Windows 11 24H2 / macOS 15.1 / Ubuntu 24.04"
+    validations:
+      required: true
+  - type: dropdown
+    id: theme
+    attributes:
+      label: Theme
+      options:
+        - Dark
+        - Light
+        - System
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happens
+      description: What you see, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: Drag the image here. For a rule that does not apply, include the element's `class` attribute.
+  - type: textarea
+    id: switches
+    attributes:
+      label: Feature switches
+      description: Which switches are on in Settings → Cyberpunk skin (breathing light, sweep, status marks, settings HUD, code-block chrome).

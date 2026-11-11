@@ -1,0 +1,59 @@
+{
+  "name": "dsh-client-ui-cyberpunk",
+  "version": "0.1.282",
+  "description": "赛博朋克霓虹配色的 DeepSeek Harness 界面皮肤：深蓝黑底、青色描边、暗红选区；深浅两套主题、设置页控制面板，纯设计 token 覆盖，无运行时依赖。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-client-ui",
+    "deepseek-harness",
+    "theme",
+    "skin",
+    "cyberpunk",
+    "dark-theme"
+  ],
+  "homepage": "https://github.com/ziyuo/dsh-client-ui-cyberpunk#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziyuo/dsh-client-ui-cyberpunk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ziyuo/dsh-client-ui-cyberpunk/issues"
+  },
+  "author": "ziyuo",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "node --check lib/client.js && node --check lib/index.js",
+    "test": "npm run check && node scripts/verify-manifest.mjs",
+    "prepack": "npm run test"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  }
+}
